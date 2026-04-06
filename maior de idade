@@ -1,5 +1,48 @@
-idade=input("Digite sua idade")
-idade>=18
-print("Maior de idade")
+numero = input("digite um numero: ")
+numero = int(numero)
+valida_pos = numero > 0
+valida_nrg = numero < 0
+if valida_pos:
+    print("o numero e positivo")
+elif valida_nrg:
+    print("o numero e negativo")
 else:
-print("maior de idade")
+    print ("o numero e 0")
+
+idade= input("digite sua idade: ")
+idade = int(idade)
+valida_pos = idade > 18
+valida_nrg = idade < 18
+if valida_pos:
+    print("maior de 18 anos")
+elif valida_nrg:
+    print("menor de 18 anos")
+else:
+    print ("tem 18 anos18")
+
+senha= input("digite a senha: ")
+if senha == "python123" :
+    print("senha coreta")
+else:
+    print ("senha incorreta")
+
+nota= input("digite sua nota: ")
+nota = int(numero)
+valida_pos = nota > 6.0
+valida_nrg = nota < 6.0
+if valida_pos:
+    print("aprovado")
+elif valida_nrg:
+    print("reprovado")
+
+compra = input("digite o valor da sua compra: R$ ")
+compra = int(compra)
+desconto = compra * 0.10
+presofinal = compra - desconto
+valida_mir = compra > 100
+valida_men = compra < 100
+if valida_mir:
+    print( presofinal )
+    print("voce teve dizconto de 10%")
+elif valida_men:
+    print(compra)
